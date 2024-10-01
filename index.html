@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Supplies Assignment</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <h2>Chemical Supplies</h2>
+
+        <div class="toolbar mb-3">
+            <div class="btn-group" role="group">
+                <button class="btn" onclick="addRow()">
+                    <img src="icons/plus-circle-fill.svg" alt="Add Row">
+                </button>
+                <button class="btn" onclick="moveRowUp()">
+                    <img src="icons/arrow-up-circle-fill.svg" alt="Move Up">
+                </button>
+                <button class="btn" onclick="moveRowDown()">
+                    <img src="icons/arrow-down-circle-fill.svg" alt="Move Down">
+                </button>
+                <button class="btn" onclick="deleteRow()">
+                    <img src="icons/trash3-fill.svg" alt="Delete Row">
+                </button>
+                <button class="btn" onclick="refreshData()">
+                    <img src="icons/arrow-clockwise.svg" alt="Refresh">
+                </button>
+                <button class="btn" onclick="saveData()">
+                    <img src="icons/floppy-fill.svg" alt="Save">
+                </button>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered" id="chemicalTable">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="selectAll" onclick="toggleSelectAll()"></th>
+                        <th onclick="sortTable(1)">Chemical Name</th>
+                        <th onclick="sortTable(2)">Vendor</th>
+                        <th onclick="sortTable(3)">Density (g/m³)</th>
+                        <th onclick="sortTable(4)">Viscosity (m²/s)</th>
+                        <th onclick="sortTable(5)">Packaging</th>
+                        <th onclick="sortTable(6)">Pack Size</th>
+                        <th onclick="sortTable(7)">Unit</th>
+                        <th onclick="sortTable(8)">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="chemicalTableBody">
+                    <!-- Default Rows -->
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="col-edit" contenteditable="true">Ammonium Persulfate</td>
+                        <td class="col-edit" contenteditable="true">LG Chem</td>
+                        <td class="col-edit" contenteditable="true">3525.92</td>
+                        <td class="col-edit" contenteditable="true">60.63</td>
+                        <td class="col-edit" contenteditable="true">Bag</td>
+                        <td class="col-edit" contenteditable="true">100.00</td>
+                        <td class="col-edit" contenteditable="true">kg</td>
+                        <td class="col-edit" contenteditable="true">6495.18</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="col-edit" contenteditable="true">Caustic Potash</td>
+                        <td class="col-edit" contenteditable="true">Formosa</td>
+                        <td class="col-edit" contenteditable="true">3172.15</td>
+                        <td class="col-edit" contenteditable="true">48.22</td>
+                        <td class="col-edit" contenteditable="true">Bag</td>
+                        <td class="col-edit" contenteditable="true">100.00</td>
+                        <td class="col-edit" contenteditable="true">kg</td>
+                        <td class="col-edit" contenteditable="true">8751.90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

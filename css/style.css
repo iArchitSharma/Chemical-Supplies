@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.toolbar {
+    display: flex;            
+    align-items: center;    
+    justify-content: flex-end; 
+}
+
+.toolbar button {
+    margin-right: 10px;
+}
+
+.table {
+    width: 100%;
+    overflow-x: auto; 
+}
+
+th {
+    cursor: pointer;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.col-edit {
+    background-color: #f9f9f9;
+}
+
+.toolbar .btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 5px; 
+}
+
+.toolbar .btn img {
+    width: 24px; 
+    height: 24px;
+}
+
+.toolbar .btn:hover, 
+.toolbar .btn:focus {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
