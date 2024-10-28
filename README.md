@@ -54,12 +54,12 @@ manifest.json: Configuration file for the PWA.
 ## 6. Accessibility Considerations
 To ensure accessibility:
 
-Semantic HTML: Appropriate HTML elements are used for better screen reader support.
-Keyboard Navigation: Buttons are accessible via keyboard shortcuts, and focus states are visible.
-Alternative Text: Images have alt attributes for better understanding by screen readers.
+**Semantic HTML**: Appropriate HTML elements are used for better screen reader support.
+**Keyboard Navigation**: Buttons are accessible via keyboard shortcuts, and focus states are visible.
+**Alternative Text**: Images have alt attributes for better understanding by screen readers.
 
 ## 7. Performance Considerations
 To optimize performance:
 
-Lazy Loading: Resources are loaded only when needed.
+**Lazy Loading**: Resources are loaded only when needed.
 Efficient Caching: The service worker is configured to cache essential files for offline access, minimizing load times.
